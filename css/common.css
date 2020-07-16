@@ -16,6 +16,11 @@ body, html {
     font-size: 1.4rem;
   }
 }
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 0 20px;
+  }
+}
 body > main {
   -ms-overflow-x: hidden;
 }

@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./mixin.scss";
 .header {
     position: fixed;
     top: 0;
@@ -17,6 +18,8 @@
             a {
                 font-size: 3.6rem;
                 color: white;
+                font-family: "Montserrat", sans-serif;
+                font-weight: normal;
             }
         }
         &:hover {
@@ -29,7 +32,7 @@
         align-items: center;
         .entry {
             width: 120px;
-            padding: 6px 0;
+            padding: 9px 0;
             margin-right: 30px;
             background-color: $blue;
             border: 1px solid $blue;
@@ -42,9 +45,9 @@
             -ms-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             a {
-                font-weight: bold;
                 font-size: 1.6rem;
                 color: white;
+                font-family: "Roboto Condensed", sans-serif;
             }
             &:hover {
                 background-color: white;
@@ -95,6 +98,13 @@
                 -o-transform: translateY(0) rotate(45deg);
                 background-color: white;
             }
+            span:first-of-type {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+            }
             span:last-of-type {
                 transform: rotate(135deg);
                 -webkit-transform: rotate(135deg);
@@ -105,20 +115,29 @@
         }
     }
     .header-drawer {
+        overflow: hidden;
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         background-color: $dark-blue;
         height: 0;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
+        transition: height 0.5s ease;
+        -webkit-transition: height 0.5s ease;
+        -moz-transition: height 0.5s ease;
+        -ms-transition: height 0.5s ease;
+        -o-transition: height 0.5s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .recruit {
+            max-width: 1120px;
+            width: 100%;
+            margin: auto;
+        }
     }
     .header-drawer.expand {
-        height: calc(100vh);
+        height: 100vh;
     }
 }
 .header.stick {
@@ -142,7 +161,9 @@
                 width: 100%;
             }
             .title {
+                width: 100%;
                 position: absolute;
+                letter-spacing: 23px;
                 top: 35%;
                 left: 50%;
                 text-align: center;
@@ -167,7 +188,7 @@
         max-width: 1120px;
         width: 100%;
         position: absolute;
-        top: -150px;
+        top: -68%;
         left: 50%;
         transform: translateX(-50%);
         background-color: white;
@@ -188,11 +209,14 @@
                 font-size: 2rem;
                 display: block;
                 color: $grey;
-                margin-top: 2%;
+                margin-top: 1%;
+                font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro",
+                    "メイリオ", "ＭＳ ゴシック", sans-serif;
             }
         }
         .text {
             margin-top: 3%;
+            padding: 0 20px;
             p {
                 font-size: 2rem;
                 text-align: center;
@@ -205,10 +229,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .project-content {
         position: relative;
-        width: 25%;
-
+        width: 20%;
         .layer {
             width: 100%;
             height: 100%;
@@ -224,14 +248,18 @@
         img {
             width: 100%;
             height: 100%;
-            position: relative;
         }
         .project-text {
             position: absolute;
             text-align: center;
             z-index: 2;
             width: 100%;
-            top: 40%;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
             color: white;
             font-family: "Crimson Text", serif;
             span {
@@ -253,6 +281,8 @@
                 margin-top: 5%;
                 font-size: 24px;
                 font-weight: normal;
+                font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro",
+                    "メイリオ", "ＭＳ ゴシック", sans-serif;
             }
         }
         &:hover {
@@ -291,24 +321,51 @@
             p {
                 margin-top: 10%;
                 font-size: 2rem;
+                font-family: "Crimson Text", serif;
             }
         }
         img {
             width: 100%;
         }
         span.more {
+            overflow: hidden;
             position: absolute;
             bottom: 20px;
             right: 30px;
             font-size: 1.6rem;
             color: white;
-            &::before {
+            &:before {
                 content: "";
                 width: 16px;
                 height: 2px;
                 background-color: white;
                 display: block;
                 margin-bottom: 15px;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+            }
+            &:after {
+                transform: rotate(135deg);
+                position: absolute;
+                right: -3px;
+                top: 5px;
+                content: "";
+                width: 0px;
+                height: 2px;
+                display: block;
+                background-color: white;
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
             }
         }
         &:before {
@@ -329,7 +386,12 @@
                 width: 100%;
             }
             span.more {
-                
+                &:before {
+                    width: 100%;
+                }
+                &:after {
+                    width: 17px;
+                }
             }
         }
     }
@@ -356,8 +418,6 @@
     .img {
         position: absolute;
         top: 0;
-        left: 0;
-        max-height: 1070px;
         img {
             width: 100%;
         }
@@ -393,7 +453,36 @@
             color: white;
             display: flex;
             justify-content: space-between;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            .icon,
+            .details-link {
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+            }
+            &:hover {
+                opacity: 0.8;
+                .icon,
+                .details-link {
+                    transform: translate(10px, 0);
+                    -webkit-transform: translate(10px, 0);
+                    -moz-transform: translate(10px, 0);
+                    -ms-transform: translate(10px, 0);
+                    -o-transform: translate(10px, 0);
+                }
+            }
         }
+    }
+}
+.story {
+    .img {
+        left: 0;
     }
 }
 .workstyle {
@@ -436,11 +525,14 @@
                     display: block;
                     font-size: 2rem;
                     color: $grey;
+                    font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro",
+                        "メイリオ", "ＭＳ ゴシック", sans-serif;
                 }
             }
             .content {
                 margin-top: 6%;
                 font-size: 2.4rem;
+                font-weight: bold;
             }
             .name {
                 margin-top: 2%;
@@ -463,9 +555,46 @@
             }
         }
         .img {
+            position: relative;
             width: 49%;
             img {
                 width: 100%;
+            }
+            .left,
+            .right {
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $blue;
+                position: absolute;
+                bottom: 3px;
+                right: -50px;
+                i {
+                    font-size: 1.2rem;
+                    color: white;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .right {
+                bottom: 55px;
+            }
+            .number {
+                position: absolute;
+                bottom: -26px;
+                right: 0;
+                span {
+                    font-weight: bold;
+                    color: $grey;
+                    font-size: 1.6rem;
+                }
+                span:first-of-type {
+                    color: $blue;
+                }
             }
         }
     }
@@ -483,9 +612,34 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
                 span {
+                    font-weight: bold;
                     font-size: 2.4rem;
                     color: $blue;
+                }
+                .icon,
+                span {
+                    transition: all 0.5s ease;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                }
+                &:hover {
+                    opacity: 0.8;
+                    .icon,
+                    span {
+                        transform: translate(10px, 0);
+                        -webkit-transform: translate(10px, 0);
+                        -moz-transform: translate(10px, 0);
+                        -ms-transform: translate(10px, 0);
+                        -o-transform: translate(10px, 0);
+                    }
                 }
             }
         }
@@ -505,12 +659,25 @@
         flex-wrap: wrap;
         padding: 8% 0;
         .catalog-item {
+            cursor: pointer;
             width: 50%;
             padding: 10px;
             .img {
                 width: 100%;
+                overflow: hidden;
+                transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
                 img {
                     width: 100%;
+                    height: 100%;
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    -ms-transition: all 0.5s;
+                    -o-transition: all 0.5s;
                 }
             }
             .choose {
@@ -524,6 +691,54 @@
                     font-size: 2rem;
                     color: black;
                     font-weight: bold;
+                }
+                span,
+                .icon {
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    -ms-transition: all 0.5s;
+                    -o-transition: all 0.5s;
+                }
+            }
+            &:hover {
+                .img {
+                    opacity: 0.8;
+                    // img {
+                    //     transform: scale(1.15);
+                    //     -webkit-transform: scale(1.15);
+                    //     -moz-transform: scale(1.15);
+                    //     -ms-transform: scale(1.15);
+                    //     -o-transform: scale(1.15);
+                    // }
+                }
+                .choose {
+                    span,
+                    .icon {
+                        opacity: 0.8;
+                        transform: translate(10px, 0);
+                        -webkit-transform: translate(10px, 0);
+                        -moz-transform: translate(10px, 0);
+                        -ms-transform: translate(10px, 0);
+                        -o-transform: translate(10px, 0);
+                    }
+                }
+            }
+        }
+        .play-log {
+            position: relative;
+            .icon-play {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                i {
+                    font-size: 50px;
+                    color: transparent;
                 }
             }
         }
@@ -541,6 +756,8 @@
             display: block;
             font-size: 2rem;
             color: black;
+            font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro",
+                "メイリオ", "ＭＳ ゴシック", sans-serif;
         }
     }
     .blog-content {
@@ -552,9 +769,15 @@
             width: 33%;
             padding: 0 5px;
             .img {
+                overflow: hidden;
                 width: 100%;
                 img {
                     width: 100%;
+                    transition: all 0.5s;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    -ms-transition: all 0.5s;
+                    -o-transition: all 0.5s;
                 }
             }
             .text {
@@ -571,6 +794,19 @@
                     letter-spacing: 2px;
                     font-size: 1.6rem;
                     font-weight: normal;
+                    color: black;
+                }
+            }
+            &:hover {
+                opacity: 0.8;
+                .img {
+                    img {
+                        transform: scale(1.15);
+                        -webkit-transform: scale(1.15);
+                        -moz-transform: scale(1.15);
+                        -ms-transform: scale(1.15);
+                        -o-transform: scale(1.15);
+                    }
                 }
             }
         }
@@ -584,6 +820,16 @@
         color: $grey;
         padding: 7px 6px;
         border: 1px solid $bg-grey-1;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        &:hover {
+            background-color: $dark-blue;
+            color: white;
+            border-color: $dark-blue;
+        }
     }
 }
 .recruit {
@@ -598,6 +844,8 @@
             display: block;
             font-size: 2rem;
             color: $grey;
+            font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro",
+                "メイリオ", "ＭＳ ゴシック", sans-serif;
         }
     }
     .recruit-content {
@@ -606,14 +854,26 @@
         flex-wrap: wrap;
         margin-top: 4.5%;
         .recruit-block {
+            z-index: 1;
             width: 23.8%;
             background-color: white;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
             .item {
                 padding: 26% 0;
                 text-align: center;
+                transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
                 h3 {
                     font-size: 2rem;
                     margin-top: 10%;
+                    color: black;
                 }
             }
             &:before {
@@ -622,6 +882,16 @@
                 height: 5px;
                 background-color: $blue;
                 display: block;
+            }
+            &:hover {
+                opacity: 0.8;
+                .item {
+                    transform: translate(0, -10px);
+                    -webkit-transform: translate(0, -10px);
+                    -moz-transform: translate(0, -10px);
+                    -ms-transform: translate(0, -10px);
+                    -o-transform: translate(0, -10px);
+                }
             }
         }
     }
@@ -645,10 +915,26 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
         .entry-button {
             width: 100%;
             font-size: 2.4rem;
             color: white;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+        &:hover {
+            background-color: white;
+            .entry-button {
+                color: $blue;
+            }
         }
     }
 }
@@ -660,6 +946,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .left {
             display: flex;
             justify-content: space-between;
@@ -673,12 +960,375 @@
                 img {
                     margin-left: 5px;
                 }
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
         .right {
             p {
                 font-size: 1.4rem;
                 color: white;
+            }
+        }
+    }
+}
+@include CSSIE {
+    .header {
+        .logo {
+            width: 90%;
+        }
+        .header__menu {
+            .entry {
+                padding: 9px 0;
+                padding-top: 8px;
+            }
+        }
+    }
+    .entry-bottom {
+        .button {
+            margin-top: 9.5%;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .technical__content {
+        position: unset !important;
+        transform: unset !important;
+        -webkit-transform: unset !important;
+        -moz-transform: unset !important;
+        -ms-transform: unset !important;
+        -o-transform: unset !important;
+        padding-bottom: 20px;
+        h2 {
+            margin-top: 2.3% !important;
+        }
+    }
+    .slice-top {
+        .slice__content {
+            .slice__details {
+                .title {
+                    font-size: 5rem;
+                    letter-spacing: unset;
+                }
+            }
+        }
+    }
+    .interview {
+        .interview-content {
+            .content-details {
+                width: 100%;
+            }
+            .img {
+                margin: 40px auto 0;
+            }
+        }
+        .button__more {
+            margin-top: 50px;
+        }
+        .layer {
+            height: 100%;
+        }
+    }
+    .story,
+    .workstyle {
+        .img,
+        .text {
+            position: unset;
+            margin: 20px auto;
+        }
+        .story-bg {
+            display: none;
+            visibility: hidden;
+        }
+        .text {
+            .main-link {
+                margin-top: 0;
+            }
+        }
+    }
+    .workstyle {
+        .text {
+            margin-top: 8%;
+        }
+    }
+    .project-file {
+        .project-content {
+            .project-text {
+                .number {
+                    font-size: 4.4rem;
+                }
+            }
+        }
+    }
+    .years {
+        .years-content {
+            .title {
+                h4 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    // .project-file {
+    //     .project-content {
+    //         width: 33%;
+    //     }
+    // }
+    .interview .interview-content .img .right {
+        bottom: 59px;
+    }
+    .interview .interview-content .img .left {
+        bottom: 6px;
+    }
+    .catalog .catalog-content .catalog-item .img img {
+        margin-bottom: -3px;
+    }
+    .catalog .catalog-content .play-log .icon-play {
+        width: 50px;
+    }
+}
+@media screen and(max-width: 576px) {
+    h2 {
+        font-size: 2.4rem !important;
+    }
+    .header {
+        padding: 10px;
+        .logo {
+            h1 {
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .header-drawer {
+            background-color: white;
+            .recruit {
+                .recruit-content {
+                    .recruit-block {
+                        .item {
+                            padding: 5% 0;
+                            h3 {
+                                font-size: 1.4rem;
+                                margin-top: 5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header__menu {
+            .menu__button {
+                width: 30px;
+                height: 30px;
+                span {
+                    background-color: $blue !important;
+                }
+                span:first-of-type {
+                    transform: translateY(-13px);
+                    -webkit-transform: translateY(-13px);
+                    -moz-transform: translateY(-13px);
+                    -ms-transform: translateY(-13px);
+                    -o-transform: translateY(-13px);
+                }
+                span:last-of-type {
+                    transform: translateY(13px);
+                    -webkit-transform: translateY(13px);
+                    -moz-transform: translateY(13px);
+                    -ms-transform: translateY(13px);
+                    -o-transform: translateY(13px);
+                }
+            }
+            .entry {
+                width: 100px;
+                padding: 3px 0;
+                margin-right: 20px;
+            }
+        }
+    }
+    .slice-top .slice__content .slice__details .title {
+        font-size: 2rem;
+    }
+    .technical {
+        min-height: unset;
+        .technical__content {
+            h2 {
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+            .text {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .project-file {
+        .project-content {
+            width: 100%;
+            margin: 20px;
+        }
+    }
+    .years {
+        .years-content {
+            .title {
+                top: 22%;
+                width: 100%;
+                h4 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    margin-top: 4%;
+                    font-size: 1.2rem;
+                }
+            }
+            span.more {
+                font-size: 0.8rem;
+                bottom: 8px;
+                right: 8px;
+                &:before {
+                    margin-bottom: 3px;
+                    width: 7px;
+                    height: 1px;
+                }
+                &:after {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    .story,
+    .workstyle {
+        .text {
+            h2 {
+                line-height: unset !important;
+            }
+            .story-link {
+                padding: 10px;
+                font-size: 1.2rem !important;
+                .icon {
+                    display: none;
+                }
+            }
+        }
+        .bg-grey {
+            min-height: unset;
+        }
+    }
+    .interview {
+        .layer {
+            top: 0;
+            padding-bottom: 20px;
+        }
+        .interview-content {
+            .content-details {
+                .title {
+                    margin-top: 0px;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+                .content {
+                    font-size: 1.4rem;
+                }
+            }
+            .img {
+                width: 100%;
+                .right {
+                    right: 0px;
+                    top: -50px;
+                }
+                .left {
+                    top: -50px;
+                    right: 52px;
+                }
+            }
+        }
+        .button__more {
+            padding-bottom: 30px;
+            a {
+                margin: 5px 0;
+                width: 100%;
+                .button {
+                    padding: 4% 6%;
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    .catalog {
+        .catalog-content {
+            .catalog-item {
+                width: 100%;
+                .choose {
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    .blog {
+        .title {
+            span {
+                font-size: 1.2rem;
+            }
+        }
+        .blog-content {
+            .content-block {
+                margin-bottom: 20px;
+                width: 100%;
+                .text {
+                    h3 {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    .recruit {
+        .title {
+            span {
+                font-size: 12px;
+            }
+        }
+        .recruit-content {
+            .recruit-block {
+                width: 100%;
+                .item {
+                    padding: 8% 0;
+                }
+                &:before {
+                    width: 50%;
+                    margin: auto;
+                    height: 2px;
+                }
+            }
+        }
+    }
+    .entry-bottom {
+        margin-top: 0;
+        min-height: unset;
+        padding: 40px 0;
+        .button {
+            width: 200px;
+            padding: 5px 0;
+            height: unset;
+        }
+    }
+    .footer {
+        .footer-content {
+            .left,
+            .right {
+                width: 100%;
+                margin-top: 10px;
+                text-align: center;
             }
         }
     }

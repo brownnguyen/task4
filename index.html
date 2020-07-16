@@ -7,7 +7,11 @@
     <link rel="icon" type="image/png" href="./images/img_favicon.png">
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Task4</title>
@@ -32,7 +36,44 @@
             </div>
         </div>
         <div class="header-drawer">
-
+            <div class="recruit">
+                <div class="container">
+                    <div class="recruit-content">
+                        <div class="recruit-block">
+                            <a href="#link">
+                                <div class="item">
+                                    <img src="./images/icon-tick.png" alt="tick">
+                                    <h3>募集要項</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recruit-block">
+                            <a href="#link">
+                                <div class="item">
+                                    <img src="./images/icon-option.png" alt="option">
+                                    <h3>選考プロセス</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recruit-block">
+                            <a href="#link">
+                                <div class="item">
+                                    <img src="./images/icon-develop.png" alt="">
+                                    <h3>教育プログラム</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recruit-block">
+                            <a href="#link">
+                                <div class="item">
+                                    <img src="./images/icon-question.png" alt="">
+                                    <h3>採用Q&A</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- ---- end header ---- -->
@@ -223,6 +264,15 @@
                     </div>
                     <div class="img">
                         <img src="./images/img-man-looking.jpg" alt="">
+                        <div class="right">
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <div class="left">
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <div class="number">
+                            <span>01</span><span> / </span><span>05</span>
+                        </div>
                     </div>
                 </div>
                 <div class="button__more">
@@ -252,10 +302,26 @@
             <div class="container">
                 <div class="catalog-content">
                     <div class="catalog-item">
-                        <div class="img">
-                            <img src="./images/img-paperboat.jpg" alt="">
-                        </div>
                         <a href="#link">
+                            <div class="img">
+                                <img src="./images/img-paperboat.jpg" alt="">
+                            </div>
+                            <div class="choose">
+                                <span>タイトルが入ります。</span>
+                                <div class="icon">
+                                    <img src="./images/icon-right-blue.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item play-log">
+                        <a href="#link">
+                            <div class="img">
+                                <img src="./images/img-workingman.jpg" alt="">
+                                <div class="icon-play">
+                                    <img src="./images/icon-play.svg" alt="">
+                                </div>
+                            </div>
                             <div class="choose">
                                 <span>タイトルが入ります。</span>
                                 <div class="icon">
@@ -265,10 +331,10 @@
                         </a>
                     </div>
                     <div class="catalog-item">
-                        <div class="img">
-                            <img src="./images/img-workingman.jpg" alt="">
-                        </div>
                         <a href="#link">
+                            <div class="img">
+                                <img src="./images/img-letter.jpg" alt="">
+                            </div>
                             <div class="choose">
                                 <span>タイトルが入ります。</span>
                                 <div class="icon">
@@ -278,23 +344,10 @@
                         </a>
                     </div>
                     <div class="catalog-item">
-                        <div class="img">
-                            <img src="./images/img-letter.jpg" alt="">
-                        </div>
                         <a href="#link">
-                            <div class="choose">
-                                <span>タイトルが入ります。</span>
-                                <div class="icon">
-                                    <img src="./images/icon-right-blue.png" alt="">
-                                </div>
+                            <div class="img">
+                                <img src="./images/img-pen.jpg" alt="">
                             </div>
-                        </a>
-                    </div>
-                    <div class="catalog-item">
-                        <div class="img">
-                            <img src="./images/img-pen.jpg" alt="">
-                        </div>
-                        <a href="#link">
                             <div class="choose">
                                 <span>タイトルが入ります。</span>
                                 <div class="icon">
@@ -314,34 +367,40 @@
                 </h2>
                 <div class="blog-content">
                     <div class="content-block">
-                        <div class="img">
-                            <img src="./images/img-truck.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>NEWS <span>0000.00.00</span></h4>
-                            <h3>テキストが入ります。テキストが入ります。
-                                テキストが入ります。</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="img">
+                                <img src="./images/img-truck.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>NEWS <span>0000.00.00</span></h4>
+                                <h3>テキストが入ります。テキストが入ります。
+                                    テキストが入ります。</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="content-block">
-                        <div class="img">
-                            <img src="./images/img-meeting.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>NEWS <span>0000.00.00</span></h4>
-                            <h3>テキストが入ります。テキストが入ります。
-                                テキストが入ります。</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="img">
+                                <img src="./images/img-meeting.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>NEWS <span>0000.00.00</span></h4>
+                                <h3>テキストが入ります。テキストが入ります。
+                                    テキストが入ります。</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="content-block">
-                        <div class="img">
-                            <img src="./images/img-workman-point.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>NEWS <span>0000.00.00</span></h4>
-                            <h3>テキストが入ります。テキストが入ります。
-                                テキストが入ります。</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="img">
+                                <img src="./images/img-workman-point.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>NEWS <span>0000.00.00</span></h4>
+                                <h3>テキストが入ります。テキストが入ります。
+                                    テキストが入ります。</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <a href="#link">
@@ -359,28 +418,36 @@
                 </h2>
                 <div class="recruit-content">
                     <div class="recruit-block">
-                        <div class="item">
-                            <img src="./images/icon-tick.png" alt="tick">
-                            <h3>募集要項</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="item">
+                                <img src="./images/icon-tick.png" alt="tick">
+                                <h3>募集要項</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="recruit-block">
-                        <div class="item">
-                            <img src="./images/icon-option.png" alt="option">
-                            <h3>選考プロセス</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="item">
+                                <img src="./images/icon-option.png" alt="option">
+                                <h3>選考プロセス</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="recruit-block">
-                        <div class="item">
-                            <img src="./images/icon-develop.png" alt="">
-                            <h3>教育プログラム</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="item">
+                                <img src="./images/icon-develop.png" alt="">
+                                <h3>教育プログラム</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="recruit-block">
-                        <div class="item">
-                            <img src="./images/icon-question.png" alt="">
-                            <h3>採用Q&A</h3>
-                        </div>
+                        <a href="#link">
+                            <div class="item">
+                                <img src="./images/icon-question.png" alt="">
+                                <h3>採用Q&A</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
