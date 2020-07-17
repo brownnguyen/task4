@@ -444,6 +444,7 @@
     .img {
         position: absolute;
         top: 0;
+        width: 67%;
         img {
             width: 100%;
         }
@@ -1159,6 +1160,9 @@
             .main-link {
                 margin-top: 0;
             }
+        }
+        .img{
+            width: 100%;
         }
     }
     .workstyle {

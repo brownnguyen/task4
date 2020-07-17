@@ -386,7 +386,8 @@
   .story .img,
   .workstyle .img {
     position: absolute;
-    top: 0; }
+    top: 0;
+    width: 67%; }
     .story .img img,
     .workstyle .img img {
       width: 100%; }
@@ -1034,6 +1035,9 @@
   .story .text .main-link,
   .workstyle .text .main-link {
     margin-top: 0; }
+  .story .img,
+  .workstyle .img {
+    width: 100%; }
 
   .workstyle .text {
     margin-top: 8%; }
