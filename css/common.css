@@ -5,7 +5,8 @@
   padding: 0;
 }
 
-body, html {
+body,
+html {
   font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro", "メイリオ",
     "ＭＳ ゴシック", sans-serif;
   font-weight: 500;
@@ -16,8 +17,8 @@ body, html {
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width: 1024px){
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     padding: 0 20px;
   }
 }
@@ -29,14 +30,14 @@ body > main {
     overflow: hidden;
   }
 }
-a{
+a {
   text-decoration: none;
 }
-.container{
+.container {
   margin: 0 auto;
   max-width: 1120px;
 }
-.w-16{
+.w-16 {
   max-width: 1600px;
   margin: 0 auto;
 }
