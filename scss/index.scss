@@ -1,5 +1,10 @@
 @import "./variables.scss";
 @import "./mixin.scss";
+
+@font-face{
+    font-family: A1MinchoStd-Bold;
+    src: url('../assets/fonts/A1MinchoStd-Bold.otf');
+}
 .header {
     position: fixed;
     top: 0;
