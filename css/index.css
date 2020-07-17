@@ -5,12 +5,8 @@
   z-index: 1030;
   width: 100%;
   padding: 30px 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -24,30 +20,18 @@
   .header .logo:hover {
     opacity: 0.8; }
   .header .header__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    justify-content: space-between;
+    align-items: center; }
     .header .header__menu .entry {
       width: 120px;
       padding: 9px 0;
       margin-right: 30px;
       background-color: #013e8d;
       border: 1px solid #013e8d;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      justify-content: center;
+      align-items: center;
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
@@ -123,15 +107,9 @@
     -moz-transition: height 0.5s ease;
     -ms-transition: height 0.5s ease;
     -o-transition: height 0.5s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    justify-content: space-between;
+    align-items: center; }
     .header .header-drawer .recruit {
       max-width: 1120px;
       width: 100%;
@@ -144,8 +122,7 @@
 .header.stick {
   padding: 20px;
   background-color: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 4px;
-          box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 4px; }
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 4px; }
   .header.stick .logo h1 a {
     color: #013e8d; }
 
@@ -216,14 +193,9 @@
 
 .project-file {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .project-file .project-content {
     position: relative;
     width: 20%; }
@@ -393,14 +365,9 @@
       width: 100%; }
   .story .text,
   .workstyle .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 680px;
     position: absolute;
@@ -427,12 +394,8 @@
       margin: 5px 0;
       font-size: 1.6rem;
       color: white;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      justify-content: space-between;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
@@ -469,9 +432,7 @@
 .workstyle .text {
   right: unset;
   left: 7%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   z-index: 3; }
 
 .interview {
@@ -485,14 +446,9 @@
     min-height: 470px;
     background-color: #d3d4d9; }
   .interview .interview-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .interview .interview-content .content-details {
       width: 49%; }
       .interview .interview-content .content-details .title {
@@ -579,14 +535,9 @@
         .interview .interview-content .content-img .number .total {
           color: #666666; }
   .interview .button__more {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 8%; }
     .interview .button__more a {
       width: 49%; }
@@ -594,15 +545,9 @@
         padding: 7% 6%;
         width: 100%;
         background-color: white;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
@@ -638,14 +583,9 @@
   margin-top: 5%; }
   .catalog .catalog-content {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 8% 0; }
     .catalog .catalog-content .catalog-item {
       cursor: pointer;
@@ -671,15 +611,9 @@
         margin-top: -3px;
         padding: 3% 20px;
         background-color: white;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        justify-content: space-between;
+        align-items: center; }
         .catalog .catalog-content .catalog-item .choose span {
           font-size: 2rem;
           color: #333333;
@@ -730,14 +664,9 @@
       color: #333333;
       font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif; }
   .blog .blog-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 4%; }
     .blog .blog-content .content-block {
       width: 33%;
@@ -805,14 +734,9 @@
       color: #666666;
       font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif; }
   .recruit .recruit-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 4.5%; }
     .recruit .recruit-content .recruit-block {
       z-index: 1;
@@ -856,30 +780,18 @@
   width: 100%;
   background-image: url(../images/bg-workspace.jpg);
   background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
   .entry-bottom .button {
     max-width: 360px;
     margin-top: 5%;
     width: 100%;
     height: 80px;
     background-color: #002554;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -906,29 +818,15 @@
   padding: 39px 20px;
   background-color: #002554; }
   .footer .footer-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
     .footer .footer-content .left {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center; }
       .footer .footer-content .left .item {
         margin-right: 20px; }
         .footer .footer-content .left .item a {
@@ -1153,8 +1051,7 @@
     width: 100%;
     margin: 10px 20px; }
     .project-file .project-content a img {
-      -o-object-fit: cover;
-         object-fit: cover; }
+      object-fit: cover; }
     .project-file .project-content .project-text span {
       font-size: 1.4rem; }
     .project-file .project-content .project-text .number {
